@@ -7,7 +7,8 @@ const events = ref(null)
 
 const props = defineProps(['page'])
 
-var totalEvents
+// Initializing events to 20 so it always shows on first load.
+var totalEvents = 20
 
 var hasNextPage = computed(() => {
   var totalPages = Math.ceil(totalEvents / 2)
